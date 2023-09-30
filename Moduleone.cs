@@ -157,7 +157,7 @@ namespace SoloLearn
         static void Main(string[] args)
         {
             //create a Welcome object with the same name
-            	Welcome welcome = new Welcome();
+            Welcome welcome = new Welcome();
             		
             	
             
@@ -180,4 +180,19 @@ namespace SoloLearn
                 Console.WriteLine("This is a super message");
             }
     }
+}
+
+//class constructors = a constructor has exactly the same name as its class. is public, and does not have any return type.
+//ex
+class Person
+{
+  private int age;
+  public Person()
+  {
+    Console.WriteLine("Hi there");
+  }
+  static void Main(string[] args)
+  {
+    Person p = new Person();
+  }
 }
