@@ -5,3 +5,13 @@
 //values and Reference types.
 //Stack is used for static mem allocation, which includes all your value types.
 //Heap is used for dynamic mem allocation, which includes custom objecrs, that might need additional mem during the runtime of your program.
+//example of a class
+class Person 
+{
+    int age;
+    string name;
+    public void SayHi()
+    {
+        Console.WriteLine("hi");
+    }
+}
