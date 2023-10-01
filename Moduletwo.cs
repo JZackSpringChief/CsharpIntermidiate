@@ -35,3 +35,11 @@ namespace SoloLearn
         }
     }
 }
+
+//arrays in loops
+	int[] = new int a[12]
+				for (int k = 0; k < 12; k++)
+				{
+				    
+				}
+				
