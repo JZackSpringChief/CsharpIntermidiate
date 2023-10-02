@@ -132,3 +132,33 @@ type[, , … ,] arrayName = new type[size1, size2, …, sizeN];
 //to declare a 2 dim array
 int[,] arrayN = new int [8,8];
 //this will make 8 rows with 8 columns
+
+
+int[ , ] someNums = { {2, 3}, {5, 6}, {4, 6} };
+//three rows and two columns nested curly brackets define values for each row.
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int[ , ] someNums = { {2, 3}, {5, 6}, {4, 6} }; 
+			for (int k = 0; k < 3; k++) {
+				for (int j = 0; j < 2; j++) {
+					Console.Write(someNums[k, j]+" ");
+				}
+				Console.WriteLine();
+			}
+
+			int[,] nums = {{1,2,3},{4,5,6},{7,8,9}};
+			for (int i = 0; i < 3; i++)
+			{
+				for (int j = 0; j < 3; j++)
+				{
+					Console.Write(nums[i,j]);
+				}
+				Console.WriteLine();
+			}
+		}
+	}
+}
