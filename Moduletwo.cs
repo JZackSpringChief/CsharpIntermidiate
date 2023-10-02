@@ -94,12 +94,34 @@ namespace SoloLearn
 		static void Main(string[] args)
 		{
 			int[ ] arr = {11, 35, 62, 555, 989};
-			int sum = 0; 
+			int sum = 0; //to get full sum we create a varaible and initialize at "0" 
 			
 			foreach (int x in arr) {
 				sum += x;
 			}
 			Console.WriteLine(sum);
 		}
+	}
+}
+
+
+namespace SoloLearn
+{
+	static void Main(string[] args)
+	{
+		int[] numbers = int[5];
+		int count = 0;
+		int sum = 0;
+
+		while (count < 5)
+		{
+			numbers[count] = Convert.ToInt32(Console.WriteLine());
+			count++;
+		}
+		for (numbers[i]%2 == 0)
+		{
+			sum += numbers[i];
+		}
+		Console.WriteLine(sum);
 	}
 }
