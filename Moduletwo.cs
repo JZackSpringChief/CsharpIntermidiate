@@ -125,3 +125,10 @@ namespace SoloLearn
 		Console.WriteLine(sum);
 	}
 }
+
+//multidimentional arrays
+//declared
+type[, , … ,] arrayName = new type[size1, size2, …, sizeN];
+//to declare a 2 dim array
+int[,] arrayN = new int [8,8];
+//this will make 8 rows with 8 columns
