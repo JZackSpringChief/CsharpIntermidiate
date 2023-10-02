@@ -162,3 +162,66 @@ namespace SoloLearn
 		}
 	}
 }
+
+//jagged arrays ex/
+int[ ][ ] jaggedArr = new int[3][ ];
+
+//initialize array upon declaration
+int[ ][ ] jaggedArr = new int[ ][ ] 
+{
+  new int[ ] {1,8,2,7,9},
+  new int[ ] {2,4,6},
+  new int[ ] {33,42}
+};
+
+//full example
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int[ ][ ] jaggedArr = new int[ ][ ] 
+			{
+				new int[ ] {1,8,2,7,9},
+				new int[ ] {2,4,6},
+				new int[ ] {33,42}
+			};
+			int x = jaggedArr[2][1];
+			Console.WriteLine(x);
+		}
+	}
+}
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int day1Winner = Convert.ToInt32(Console.ReadLine());
+            int day2Winner = Convert.ToInt32(Console.ReadLine());
+            int day3Winner = Convert.ToInt32(Console.ReadLine());
+
+
+            string[][] olympiad = new string[][]
+            {
+                //day 1 - 5 participants
+                new string[] { "Jill Yan", "Bridgette Ramona", "Sree Sanda", "Jareth Charlene", "Carl Soner" },
+                //day 2 - 7 participants
+                new string[] { "Anna Hel", "Mariette Vedrana", "Fran Mayur", "Drake Hilmar", "Nikolay Brooks", "Eliana Vlatko", "Villem Mario" },
+                //day 3 - 4 participants
+                new string[] { "Hieremias Zavia", "Ziya Ollie", "Christoffel Casper", "Kristian Dana", }
+
+            };
+            //your code goes here
+            	string a = olympiad[0][day1Winner-1];
+            	Console.WriteLine(a);
+            	string b = olympiad[1][day2Winner-1];
+            	Console.WriteLine(b);
+            	string c = olympiad[2][day3Winner-1];
+            	Console.WriteLine(c);
+            
+        }
+    }
+}
