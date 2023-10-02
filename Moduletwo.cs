@@ -7,11 +7,6 @@ string[] names = {"zack", "dan", "kyle"};
 double[] prices = {23, 33, 55};
 //short hand of writing an array.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SoloLearn
 {
@@ -112,6 +107,7 @@ namespace SoloLearn
 		int[] numbers = int[5];
 		int count = 0;
 		int sum = 0;
+		int min = 0;
 
 		while (count < 5)
 		{
