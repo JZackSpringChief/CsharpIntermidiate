@@ -244,3 +244,20 @@ int[ ] arr = { 2, 4, 7, 1};
 			Console.WriteLine(arr.Max());
 			Console.WriteLine(arr.Min());
 			Console.WriteLine(arr.Sum());
+
+			namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //your code goes here
+            	int[] arr = new int[5];
+            	for (int i = 0; i < 5; i++)
+            	{
+            		arr[i] = Convert.ToInt32(Console.ReadLine());
+            	}
+            	Console.WriteLine(arr.Max()+arr.Min());
+        }
+    }
+}
