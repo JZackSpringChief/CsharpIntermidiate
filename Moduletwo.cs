@@ -225,3 +225,26 @@ namespace SoloLearn
         }
     }
 }
+
+//array properties and methods.
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int[ ] arr = {2, 4, 7};
+			
+			Console.WriteLine(arr.Length); 
+			
+			Console.WriteLine(arr.Rank); 
+			
+		}
+	}
+}
+
+//array methods
+int[ ] arr = { 2, 4, 7, 1};
+			Console.WriteLine(arr.Max());
+			Console.WriteLine(arr.Min());
+			Console.WriteLine(arr.Sum());
