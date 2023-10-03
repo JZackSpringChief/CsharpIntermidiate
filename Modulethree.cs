@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 //delcare a string
 string name = "Zack";
+string lastName = "Spring Chief";
 //declare a integer
 int age = 33; //no need for quotes and we can declare using int, double, and float(we use f for float)
 //declare booleon
@@ -27,3 +28,7 @@ name.Length; //gives length aomunt in value
 // how to store an user inputted value
 //declare value
 string input = Console.Readline();
+// concatanation adding values together(not multipying)
+Console.WriteLine("Hello my name is: " + name + " and my age is: " + age);
+//interpoleation
+Console.WriteLine($"My full name is: {name} {lastName}")
