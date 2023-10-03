@@ -259,5 +259,14 @@ int[ ] arr = { 2, 4, 7, 1};
             	}
             	Console.WriteLine(arr.Max()+arr.Min());
         }
+
+		int[,] array = new array[5]
+		for(int i = 0; i < 3; i++)
+		{
+			for(j = 0; j < 3; i++)
+			{
+				arr[i] = Convert.ToInt(Console.Write());
+			}
+		}
     }
 }
