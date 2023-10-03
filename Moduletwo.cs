@@ -26,7 +26,7 @@ namespace SoloLearn
             else
             {
             Console.WriteLine(games[x]);
-            
+			}
         }
     }
 }

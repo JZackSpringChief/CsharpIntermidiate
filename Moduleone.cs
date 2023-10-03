@@ -6,6 +6,12 @@
 //Stack is used for static mem allocation, which includes all your value types.
 //Heap is used for dynamic mem allocation, which includes custom objecrs, that might need additional mem during the runtime of your program.
 //example of a class
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 class Person 
 {
     int age;
@@ -16,11 +22,6 @@ class Person
     }
 }
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SoloLearn
 {
@@ -43,11 +44,7 @@ namespace SoloLearn
 
 
 //can use the dot "." operator to get info in object
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SoloLearn
 {
@@ -70,12 +67,6 @@ namespace SoloLearn
 }
 
 //encapsulation also meaning information hiding.
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SoloLearn
 {
@@ -103,11 +94,6 @@ namespace SoloLearn
 	}
 }
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SoloLearn
 {
@@ -143,12 +129,6 @@ namespace SoloLearn
         }
     }
 }
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SoloLearn
 {
@@ -246,12 +226,6 @@ namespace SoloLearn
 	}
 }
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace SoloLearn
 {
@@ -312,8 +286,6 @@ namespace SoloLearn
 // New post 
 // Hello!
 
-using System;
-using System.Collections.Generic;
 
 namespace Code_Coach_Challenge
 {
