@@ -32,3 +32,70 @@ string input = Console.Readline();
 Console.WriteLine("Hello my name is: " + name + " and my age is: " + age);
 //interpoleation
 Console.WriteLine($"My full name is: {name} {lastName}")
+
+//destructors -- as constructors are used when a class in instantiated, destructors are automaticall
+//invoked when an object is destroyed or deleted.
+/* - a class can only have one Destructor
+   - Destructors cannot be called. they are invoked automatically.
+   - a destructor does not take modifiers or have parameters.
+   - the name of a destructor is exactly the same as the class prefixed with a tilde (~) ex */
+
+class Dog
+{
+  ~Dog() 
+  {
+    // code statements
+  }
+}
+
+namespace SoloLearn
+{
+	class Program
+	{
+		class Dog
+		{
+			public Dog() {
+				Console.WriteLine("Constructor");
+			}
+			~Dog() {
+				Console.WriteLine("Destructor");
+			}
+		}
+		static void Main(string[] args)
+		{
+			Dog d = new Dog();
+		}
+	}
+}
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] finalists = { "James Van", "John Smith", "Leyla Brown", "Tom Homerton", "Bob Douglas" };
+
+            int winner = Convert.ToInt32(Console.ReadLine());
+
+            //this should show the winner and "Game Over"
+            FinalRound finalRound = new FinalRound(finalists, winner);
+        }
+    }
+
+    class FinalRound
+    {
+        public FinalRound(string[] finalists, int winner)
+        {
+            //complete the constructor
+            Console.WriteLine("Winner is " + finalists[winner] );
+        }
+        
+        //create destructor => "Game Over"
+        	~FinalRound() {
+        		Console.WriteLine("Game Over");
+        	}
+        
+        
+    }
+}
