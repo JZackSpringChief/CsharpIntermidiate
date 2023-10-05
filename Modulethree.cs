@@ -19,8 +19,8 @@ Console.Write(age); //this does not write in a line
 //user interactivity
 Console.ReadLine(); //gets user to input information
 //Converting
-Convert.ToInt32(); //can use other numbers like 16, 32, and 64
-Convert.ToString(); //convert input to string.
+Convert.ToInt32(3.2); //can use other numbers like 16, 32, and 64
+Convert.ToString(true); //convert input to string.
 // there are other methods
 name.ToUpper(); //converts name to uppercase in this example.
 name.ToLower(); //same but to lower case;
@@ -231,3 +231,67 @@ class Cat {
             	depCount++;
         }
     }
+//Static classes only one instance of a static class can exist in a program. you cannot instantiate and object.
+Console.WriteLine(Math.Pow(2, 3)); //you can access all the members of the math class name, without
+//declaring an object.
+// Math  
+ 
+// Math.PI the constant PI. 
+// Math.E represents the natural logarithmic base e. 
+// Math.Max() returns the larger of its two arguments. 
+// Math.Min() returns the smaller of its two arguments. 
+// Math.Abs() returns the absolute value of its argument. 
+// Math.Sin() returns the sine of the specified angle. 
+// Math.Cos() returns the cosine of the specified angle. 
+// Math.Pow() returns a specified number raised to the specified power. 
+// Math.Round() rounds the decimal number to its nearest integral value. 
+// Math.Sqrt() returns the square root of a specified number. 
+
+// Arrays
+int[] arr = {1, 2, 3, 4};
+
+// Array.Reverse(arr);
+ //arr = {4, 3, 2, 1}
+
+// Array.Sort(arr);
+ //arr = {1, 2, 3, 4}
+
+ //String 
+//  string s1 = "some text";
+// string s2 = "another text";
+
+// String.Concat(s1, s2); // combines the two strings
+
+// String.Equals(s1, s2); // returns false
+
+//DateTime
+	// Console.WriteLine(DateTime.Now);
+	// 		Console.WriteLine(DateTime.Today);
+			
+	// 		Console.WriteLine(DateTime.DaysInMonth(2016, 2));
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int count = Convert.ToInt32(Console.ReadLine());
+
+            int[] numbers = new int[count];
+
+            for (int i = 0; i < count; i++)
+            {
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            //your code goes here
+            	Array.Sort(numbers);
+            	for (int n = 0; n < numbers.Length; n++)
+				{
+					Console.WriteLine(numbers[n]);
+				}
+            
+        }
+    }
+}
