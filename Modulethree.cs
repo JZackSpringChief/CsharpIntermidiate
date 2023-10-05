@@ -99,3 +99,80 @@ namespace SoloLearn
         
     }
 }
+
+//static members FINALLY TIME TO DICUSS WHAT STATIC MEANS!!!
+static void Main(string[] args)
+//Class members (variables, properties, methods) can also be declared as static. This makes those members belong to the class itself, 
+//instead of belonging to individual objects. No matter how many objects of the class are created, there is only one copy of the static member. 
+//For example:
+class Cat {
+  public static int count=0;
+  public Cat() {
+    count++;
+  }
+}
+
+	class Program
+	{
+		class Cat {
+			public static int count=0;
+			public Cat() {
+				count++;
+			}
+		}
+		static void Main(string[] args)
+		{
+			Cat c1 = new Cat();
+			Cat c2 = new Cat();
+			Console.WriteLine(Cat.count);
+		}
+	}
+    	class Program
+	{
+		class Cat {
+			public static int count=0;
+			
+			public Cat() {
+				count++;
+			}
+		}
+		class Dog {
+		public static int count=0;
+		    public Dog() {
+			    count++;
+			}
+		}
+		static void Main(string[] args)
+		{
+			Cat c1 = new Cat();
+			Cat c2 = new Cat();
+			Cat c3 = new Cat();
+			Cat c4 = new Cat();
+			Dog d1 = new Dog();
+			Console.WriteLine(Cat.count);
+			Console.WriteLine(Dog.count);
+		}
+	}
+    	class Program
+	{
+		class Dog
+		{
+			public static void Bark() {
+				Console.WriteLine("Woof");
+			}
+		}
+		static void Main(string[] args)
+		{
+			Dog.Bark();
+		}
+	}
+    	class Program
+	{
+		class MathClass {
+			public const int ONE = 1;
+		}
+		static void Main(string[] args)
+		{
+			Console.Write(MathClass.ONE);
+		}
+	}
