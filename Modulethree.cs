@@ -295,3 +295,22 @@ namespace SoloLearn
         }
     }
 }
+//the this Keyword
+class Person {
+  private string name;
+  public Person(string name) {
+    this.name = name;
+  }
+}
+
+//the readonly modifier
+
+class Person {
+  private readonly string name = "John"; 
+  public Person(string name) {
+    this.name = name; 
+  }
+}
+
+readonly string name; // OK
+const double PI; // Error
