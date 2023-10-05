@@ -312,5 +312,5 @@ class Person {
   }
 }
 
-readonly string name; // OK
-const double PI; // Error
+readonly string name; // OK can be declared without initialization.
+const double PI; // Error as it must be initialized when it is declared
