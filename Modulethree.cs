@@ -211,7 +211,7 @@ class Cat {
                 string depName = Console.ReadLine();
                 Department dep = new Department(depName);
                 count++;
-            }
+         }
 
             Console.WriteLine("Number of departments: " + Department.depCount);
         }

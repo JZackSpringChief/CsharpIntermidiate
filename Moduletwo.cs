@@ -355,7 +355,7 @@ namespace Code_Coach_Challenge
                 "learn",
                 "dream",
                 "fun"
-            };
+        };
 
             string letter = Console.ReadLine();
 
