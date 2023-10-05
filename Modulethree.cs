@@ -166,13 +166,35 @@ class Cat {
 			Dog.Bark();
 		}
 	}
+//Constant members are static by definition
     	class Program
 	{
+    
 		class MathClass {
 			public const int ONE = 1;
 		}
 		static void Main(string[] args)
 		{
 			Console.Write(MathClass.ONE);
+		}
+	}
+
+//static constructors can be declared static to initialize static members of the class.
+	class Program
+	{
+		class SomeClass {
+			public static int X { get; set; }
+			public static int Y { get; set; }
+			
+			static SomeClass() {
+				X = 10;
+				Y = 20;
+			}
+		}
+		static void Main(string[] args)
+		{
+			Console.WriteLine(SomeClass.X);
+			Console.WriteLine(SomeClass.Y);
+			Console.WriteLine(SomeClass.X * SomeClass.Y);
 		}
 	}
