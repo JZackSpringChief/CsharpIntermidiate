@@ -312,3 +312,70 @@ int[ ] arr = { 2, 4, 7, 1};
             		break;
             	}
             	}
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			string text = "This is some text about a dog. The word dog appears in this text a number of times. This is the end.";
+			text = text.Replace("dog", "cat");
+			text = text.Substring(0, text.IndexOf(".")+1);
+			
+			Console.WriteLine(text);
+		}
+	}
+}
+	string text = "This is some text about a dog. The word dog appears in this text a number of times. This is the end.";
+			text = text.Replace("dog", "cat");
+			text = text.Substring(0, text.IndexOf(".")+25);
+			
+			Console.WriteLine(text);
+// an array is a reference type;
+
+using System;
+using System.Collections.Generic;
+
+namespace Code_Coach_Challenge
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] words = {
+                "home",
+                "programming",
+                "victory",
+                "C#",
+                "football",
+                "sport",
+                "book",
+                "learn",
+                "dream",
+                "fun"
+            };
+
+            string letter = Console.ReadLine();
+
+            int count = 0;
+            int y = 1;
+            //your code goes here
+                
+            while (count < 9)
+            {
+              if(words[count].Contains(letter))
+              {
+               	Console.WriteLine(words[count]);
+               	y += count;
+              }
+              	count ++;
+            }	
+             if(y == 0 || y == 1)
+             {
+                 Console.WriteLine("No match");
+             }
+        }
+    }
+}
