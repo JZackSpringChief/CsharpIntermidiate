@@ -300,3 +300,15 @@ int[ ] arr = { 2, 4, 7, 1};
 			Console.WriteLine(a);
 			//Outputs "am"
 		}
+        
+            string password = Console.ReadLine();
+            char[] notAllowedSymbols = { '!', '#', '$', '%', '&', '(', ')', '*', ',', '+', '-' };
+
+            //your code goes here
+            	foreach(char symbol in notAllowedSymbols){
+            	if (password.Contains(symbol))
+            	{
+            		Console.WriteLine("Invalid");
+            		break;
+            	}
+            	}
