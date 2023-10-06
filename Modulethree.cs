@@ -453,3 +453,67 @@ static void Main(string[] args) {
 			Console.WriteLine(b3.Width);
 		}
 	}// finished module 2b quiz
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name1 = Console.ReadLine();
+            int points1 = Convert.ToInt32(Console.ReadLine());
+            string name2 = Console.ReadLine();
+            int points2 = Convert.ToInt32(Console.ReadLine());
+
+            DancerPoints dancer1 = new DancerPoints(name1, points1);
+            DancerPoints dancer2 = new DancerPoints(name2, points2);
+
+            DancerPoints total = dancer1 + dancer2;
+            Console.WriteLine(total.name);
+            Console.WriteLine(total.points);
+        }
+    }
+
+    class DancerPoints
+    {
+        public string name;
+        public int points;
+        public DancerPoints(string name, int points)
+        {
+            this.name = name;
+            this.points = points;
+        }
+
+        //overload the + operator
+	    	public static DancerPoints operator+(DancerPoints a, DancerPoints b){
+        		string z = a.name + " & " + b.name;
+        		int q = a.points + b.points;
+        		
+        		DancerPoints res = new DancerPoints(name, points);
+        		return res;
+
+
+        static void Main(string[] args)
+        {
+            Score tm1 = new Score(2, 3);
+            Score tm2 = new Score(4, 2);
+
+            Score finalScores = tm1 + tm2;
+
+
+            Console.WriteLine("Round 1: " + finalScores.round1Score);
+            Console.WriteLine("Round 2: " + finalScores.round2Score);
+        }
+    }
+    class Score
+    {
+        public int round1Score { get; set; }
+        public int round2Score { get; set; }
+        public Score(int r1, int r2)
+        {
+            round1Score = r1;
+            round2Score = r2;
+        }
+					public static Score operator+(Score a, Score b) {
+        		int s = a.round1Score + b.round1Score;
+        		int s2 = a.round2Score + b.round2Score;
+        		Score res = new Score(s, s2);
+        		return res;
+    }
