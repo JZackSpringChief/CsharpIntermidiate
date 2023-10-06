@@ -235,7 +235,7 @@ class Cat {
 Console.WriteLine(Math.Pow(2, 3)); //you can access all the members of the math class name, without
 //declaring an object.
 // Math  
- 
+
 // Math.PI the constant PI. 
 // Math.E represents the natural logarithmic base e. 
 // Math.Max() returns the larger of its two arguments. 
@@ -453,4 +453,3 @@ static void Main(string[] args) {
 			Console.WriteLine(b3.Width);
 		}
 	}// finished module 2b quiz
-	
