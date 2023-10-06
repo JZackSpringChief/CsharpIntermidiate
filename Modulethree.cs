@@ -402,3 +402,55 @@ namespace SoloLearn
 		}
 	}
 }
+
+//operator overloading
+class Box {
+  public int Height {get; set;}
+  public int Width {get; set;}
+  public Box(int h, int w) {
+    Height = h;
+    Width = w;
+  }
+}
+static void Main(string[] args) {
+  Box b1 = new Box(14, 3);
+  Box b2 = new Box(5, 7);
+}
+ Box b3 = b1 + b2;// add these 2 box objects, with would result in a new, bigger box
+ //The Height and Width properties of object b3 should be equal to the sum of the 
+ //corresponding properties of the b1 and b2 objects.
+
+ public static Box operator+ (Box a, Box b) {
+  int h = a.Height + b.Height;
+  int w = a.Width + b.Width;
+  Box res = new Box(h, w);
+  return res;
+}
+
+	class Program
+	{
+		class Box {
+			public int Height { get; set; }
+			public int Width { get; set; }
+			public Box(int h, int w) {
+				Height = h;
+				Width = w;
+			}
+			public static Box operator+(Box a, Box b) {
+				int h = a.Height + b.Height;
+				int w = a.Width + b.Width;
+				Box res = new Box(h, w);
+				return res;
+			}
+		}
+		static void Main(string[] args)
+		{
+			Box b1 = new Box(14, 3);
+			Box b2 = new Box(5, 7);
+			Box b3 = b1 + b2;
+			
+			Console.WriteLine(b3.Height);
+			Console.WriteLine(b3.Width);
+		}
+	}// finished module 2b quiz
+	
