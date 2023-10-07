@@ -140,3 +140,23 @@ namespace SoloLearn
 		}
 	}
 }
+// trying to access outside of the derived class
+	{
+		class Person {
+			protected int Age {get; set;}
+			protected string Name {get; set;}
+		}
+		class Student : Person {
+			public Student(string nm) {
+				Name = nm;
+			}
+			public void Speak() {
+				Console.Write("Name: "+Name);
+			}
+		}
+		static void Main(string[] args)
+		{
+			Student s = new Student("David");
+			s.Name = "Bob"; 
+		}
+	}
