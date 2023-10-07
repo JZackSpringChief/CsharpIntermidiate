@@ -160,3 +160,19 @@ namespace SoloLearn
 			s.Name = "Bob"; 
 		}
 	}
+
+//sealed -- a class can prevent other classes from inheriting it, or any of its members, by using the sealed modifier.
+//ex.
+
+	class Program
+	{
+		sealed class Animal {
+			//some code
+		}
+		class Dog : Animal { } //Error
+		
+		static void Main(string[] args)
+		{
+			
+		}
+	}
