@@ -432,3 +432,94 @@ namespace SoloLearn
         }
     }
 }
+
+//Abstract classes -- you cannot create objects of aclass containing an abstract method 
+abstract class Shape {
+   public abstract void Draw();
+}// denoted my the abstract class
+//abstract methods are only accessable by the abstract class itself
+//abstract classes are intended to be the base classes for inherited classes. it acts like a
+//template for its derived classes.
+	class Program
+	{
+		abstract class Shape {
+			public abstract void Draw();
+		}
+		class Circle : Shape {
+			public override void Draw() {
+				Console.WriteLine("Circle Draw");
+			}
+		}
+		class Rectangle : Shape {
+			public override void Draw() {
+				Console.WriteLine("Rect Draw");
+			}
+		}
+		static void Main(string[] args)
+		{
+			Shape c = new Circle();
+			c.Draw();
+		}
+	}
+//differenc from "Sealed" as sealed prevents a class from being inherited and "Abstract" mod requires a 
+//class to be inherited.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Figure rectangle = new Rectangle(5, 6);
+            Figure triangle = new Triangle(4, 8, 3);
+
+            Console.WriteLine(rectangle.Perimeter());
+            Console.WriteLine(triangle.Perimeter());
+        }
+    }
+    abstract class Figure
+    {
+        //define abstract method Perimeter with no body
+        	public abstract int Perimeter();
+        
+    }
+    class Rectangle : Figure
+    {
+        public int width;
+        public int height;
+        public Rectangle(int width, int height)
+        {
+            this.width = width;
+            this.height = height;
+        }
+        //override Perimeter method for rectangle
+        	public override int Perimeter() {
+        		return 2*width+2*height;
+        	}
+        
+    }
+    class Triangle : Figure
+    {
+        public int side1;
+        public int side2;
+        public int side3;
+        public Triangle(int s1, int s2, int s3)
+        {
+            this.side1 = s1;
+            this.side2 = s2;
+            this.side3 = s3;
+        }
+        
+        //override Perimeter method for triangle
+        	public override int Perimeter() {
+        		return side1+side2+side3;
+        	}
+        
+    }
+}
