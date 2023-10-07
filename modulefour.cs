@@ -113,3 +113,30 @@ namespace SoloLearn
         
     }
 }
+
+//protected
+//protected is similar to private insofar as derived classed can access then. ex
+namespace SoloLearn
+{
+	class Program
+	{
+		class Person {
+			protected int Age {get; set;}
+			protected string Name {get; set;}
+		}
+		class Student : Person {
+			public Student(string nm, int a) {
+				Name = nm;
+                Age = a;
+			}
+			public void Speak() {
+				Console.Write("Name: "+Name + " i Am: " + Age);
+			}
+		}
+		static void Main(string[] args)
+		{
+			Student s = new Student("David");
+			s.Speak();
+		}
+	}
+}
