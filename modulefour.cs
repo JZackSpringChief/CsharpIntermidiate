@@ -216,3 +216,100 @@ namespace SoloLearn
         }
     }
 }
+
+//derived class Constructor and Destructor
+class Animal {
+  public Animal() {
+    Console.WriteLine("Animal created");
+  }
+  ~Animal() {
+    Console.WriteLine("Animal deleted");
+  }
+}
+class Dog: Animal {
+  public Dog() {
+    Console.WriteLine("Dog created");
+  }
+  ~Dog() {
+    Console.WriteLine("Dog deleted");
+  }
+}
+
+// we have to define the Animal class with both a constructor and destructor and a derived Dog
+//class with its own constructor and destructor as well. 
+	class Program
+	{
+		class Animal {
+			public Animal() {
+				Console.WriteLine("Animal created");
+			}
+			~Animal() {
+				Console.WriteLine("Animal deleted");
+			}
+		}
+		class Dog: Animal {
+			public Dog() {
+				Console.WriteLine("Dog created");
+			}
+			~Dog() {
+				Console.WriteLine("Dog deleted");
+			}
+		}
+		static void Main(string[] args)
+		{
+			Dog d = new Dog();
+		}
+	}
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WayStatus status = new WayStatus();
+        }
+    }
+    class Flight
+    {
+        public Flight()
+        {
+            Console.WriteLine("Registration");
+        }
+        ~Flight()
+        {
+            Console.WriteLine("Closed");
+        }
+    }
+    /*derive this class from Flight class,
+    define constructor and destructor for it*/
+    class WayStatus : Flight
+    {
+        	public WayStatus() {
+        		Console.WriteLine("On the way");
+        	}
+        	
+        	~WayStatus() {
+        		Console.WriteLine("Landed");
+        	}
+    }
+
+class A {
+
+  public int x=7;
+
+  public A() {
+
+    x++;
+
+  }
+
+}
+
+class B: A {
+
+  public B() {
+
+    x++;
+
+  }
+
+}
