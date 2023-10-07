@@ -21,6 +21,9 @@ class Dog : Animal { //derived
 		class Animal {
 			public int Legs {get; set;}
 			public int Age {get; set;}
+            	public void Pet() {
+			    Console.WriteLine("*Pet me*");
+			}
 		}
 		class Dog : Animal {
 			public Dog() {
@@ -34,6 +37,9 @@ class Dog : Animal { //derived
 		{
 			Dog d = new Dog();
 			Console.WriteLine(d.Legs);
+				Dog a = new Dog();
+			
+			a.Pet();
 			
 			d.Bark();
 		}
