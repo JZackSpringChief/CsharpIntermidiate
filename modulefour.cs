@@ -313,3 +313,26 @@ class B: A {
   }
 
 }
+
+//Polymorphism meaning "Having many forms"
+//simply, polymorphism means that a single method can have a number of different implementations.
+class Shape {
+  public virtual void Draw() {
+    Console.Write("Base Draw");
+  }
+}//using the "virtual keyword" which allows methods to be overridden in derived classes
+//virtual methods enable you to work with groups of related objects in a uniform way
+
+//using the override keyword
+class Circle : Shape {
+  public override void Draw() {
+    // draw a circle...
+    Console.WriteLine("Circle Draw");
+  }
+}
+class Rectangle : Shape {
+  public override void Draw() {
+    // draw a rectangle...
+    Console.WriteLine("Rect Draw");
+  }
+}
