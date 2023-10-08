@@ -523,3 +523,9 @@ namespace SoloLearn
         
     }
 }
+//interfaces -- interface is a completly abstract class, which contains only abstract members.
+//declared using "interface" keyword ex
+public interface IShape
+{
+    void Draw();
+}
