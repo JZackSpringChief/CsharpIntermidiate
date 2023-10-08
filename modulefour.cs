@@ -2,6 +2,8 @@
 //inheritance allows us to define a class based on another class. class Base ===> class Derived
 //for ex base class of "animal" can be used to derive Cat and Dog classes. 
 //the derived class inherites all the features from the base class, and can have its own additinal features
+using System.Runtime.InteropServices;
+
 class Animal { //base
   public int Legs {get; set;}
   public int Age {get; set;}
@@ -529,3 +531,26 @@ public interface IShape
 {
     void Draw();
 }
+// all members of the interface are default abstract, so no need to used the abstract keyword.
+//inrterfaces can only be public(by default), private and protected members.
+
+namespace SoloLearn
+{
+    class Program
+    {
+        public interface iShape {
+            void Draw();
+        }
+        class Circle : iShape {
+            public void Draw () {
+                Console.WriteLine("Circle Draw");
+            }
+        }
+        static void Main(string[] args)
+        {
+            iShape c = new Circle();
+            c.Draw();
+        }
+    }
+}
+//override keyword is not needed when you implement a interface;
