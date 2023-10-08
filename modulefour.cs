@@ -646,3 +646,17 @@ class Car {
     // some code
   }
 }
+//namespaces/when you create a blannk project, it has the following structure
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn {
+  class Program {
+    static void Main(string[] args) {
+    }
+  }
+}
+//the .NET frame work uses namespaces to organize its many classes.
