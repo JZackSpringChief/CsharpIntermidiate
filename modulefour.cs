@@ -65,13 +65,6 @@ class Dog : Animal { //derived
 		}
 	}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-
 namespace SoloLearn
 {
     class Program
@@ -338,13 +331,6 @@ class Rectangle : Shape {
     Console.WriteLine("Rect Draw");
   }
 }
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace SoloLearn
 {
 	class Program
@@ -465,13 +451,6 @@ abstract class Shape {
 	}
 //differenc from "Sealed" as sealed prevents a class from being inherited and "Abstract" mod requires a 
 //class to be inherited.
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace SoloLearn
 {
     class Program
@@ -606,12 +585,6 @@ namespace SoloLearn
 }
 
 //default implementation in interfaces allows us to write an implementation of any method.
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace SoloLearn
 {
 	class Program
@@ -661,10 +634,6 @@ namespace SoloLearn {
 }
 //the .NET frame work uses namespaces to organize its many classes.
 //drawing application
-
-using System;
-using System.Collections.Generic;
-
 namespace Code_Coach_Challenge
 {
     class Program
@@ -722,3 +691,4 @@ namespace Code_Coach_Challenge
     }
 }
 //need to come back
+//fixing a few things

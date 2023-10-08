@@ -6,8 +6,6 @@ myArray[0] = 23; //this would assign the first element of the array the value of
 string[] names = {"zack", "dan", "kyle"};
 double[] prices = {23, 33, 55};
 //short hand of writing an array.
-
-
 namespace SoloLearn
 {
     class Program
@@ -81,7 +79,6 @@ namespace SoloLearn
 		}
 	}
 }
-
 namespace SoloLearn
 {
 	class Program
@@ -334,10 +331,6 @@ namespace SoloLearn
 			
 			Console.WriteLine(text);
 // an array is a reference type;
-
-using System;
-using System.Collections.Generic;
-
 namespace Code_Coach_Challenge
 {
     class Program
@@ -379,3 +372,5 @@ namespace Code_Coach_Challenge
         }
     }
 }
+
+//cleaning

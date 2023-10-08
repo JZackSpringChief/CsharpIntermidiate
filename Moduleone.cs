@@ -21,8 +21,6 @@ class Person
         Console.WriteLine("hi");
  	}
 }
-
-
 namespace SoloLearn
 {
 	class Program
@@ -41,11 +39,7 @@ namespace SoloLearn
 		}
 	}
 }
-
-
 //can use the dot "." operator to get info in object
-
-
 namespace SoloLearn
 {
 	class Program
@@ -326,3 +320,4 @@ namespace Code_Coach_Challenge
         
     }
 }
+//cleaning code and notes

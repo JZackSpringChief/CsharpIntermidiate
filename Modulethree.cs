@@ -517,12 +517,6 @@ static void Main(string[] args) {
         		Score res = new Score(s, s2);
         		return res;
     }
-
-
-
-
-
- 
 public string name;
         public int points;
         public DancerPoints(string name, int points)
@@ -541,3 +535,4 @@ public string name;
         	}
 
     Console.Write("kyle");
+//cleaning
