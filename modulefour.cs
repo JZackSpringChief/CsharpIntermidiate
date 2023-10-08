@@ -635,3 +635,14 @@ namespace SoloLearn
 		}
 	}
 }
+//nested classes. c# supports nested classes: a class that is a member of another class. ex
+class Car {
+  string name;
+  public Car(string nm) {
+    name = nm;
+    Motor m = new Motor();
+  }
+  public class Motor {
+    // some code
+  }
+}
