@@ -604,3 +604,34 @@ namespace SoloLearn
             Console.WriteLine("Equiment: " + equipment);
     }
 }
+
+//default implementation in interfaces allows us to write an implementation of any method.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+	class Program
+	{
+		public interface IShape {
+			void Draw();
+			void Finish(){
+				Console.WriteLine("Done!");
+			}
+		}
+		class Circle : IShape {
+			public void Draw() {
+				Console.WriteLine("Circle Draw");
+			}
+		}
+		static void Main(string[] args)
+		{
+			IShape c = new Circle();
+			c.Draw();
+			c.Finish();
+		}
+	}
+}
