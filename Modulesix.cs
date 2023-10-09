@@ -180,3 +180,63 @@ The System.Collections namespace includes the following non-generic collections:
  - Queue 
  - Hashtable 
  - BitArray 
+//Lists and bitarray
+		static void Main(string[] args)
+		{
+			List<int> li = new List<int>();
+			li.Add(59);
+			li.Add(72);
+			li.Add(95);
+			li.Add(5);
+			li.Add(9);
+			li.RemoveAt(1); // remove 72
+			
+			Console.Write("\nList: ");
+			for (int x = 0; x < li.Count; x++)
+				Console.Write(li[x] + " "); // 59  95  5  9
+			li.Sort();
+			Console.Write("\nSorted: ");
+			for (int x = 0; x < li.Count; x++)
+				Console.Write(li[x] + " "); // 5  9  59  95
+		} //output is    List: 59 95 5 9
+                //and   Sorted: 5 9 59 95
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numOfPlayers = Convert.ToInt32(Console.ReadLine());
+
+            List<int> scores = new List<int>();
+            int count = 0;
+            while (count<numOfPlayers)
+            {
+                int score = Convert.ToInt32(Console.ReadLine());
+                //your code goes here
+                scores.Add(score);
+                	count++;
+                
+            }
+
+            //sort the list and output elements
+            List<int> scores1 = new List<int>();
+            scores.Sort();
+            count = 0;
+            while (count<numOfPlayers){
+                Console.Write(scores[count++ ] +" ");
+            }
+            
+        }
+    }
+
+		{
+			SortedList<string, int> sl = new SortedList<string, int>();
+
+			sl.Add("Solo", 59);
+			sl.Add("A", 95);
+			sl.Add("Learn", 72);
+			sl.Remove("A");
+			
+			Console.WriteLine("Sorted List: ");
+			foreach (string s in sl.Keys)
+				Console.WriteLine(s + ": " + sl[s]);  // Learn: 72  Solo: 59
+        }//sorted list 
