@@ -260,3 +260,25 @@ catch(Exception e) {
             }
         }
     }
+//Working with files. System.IO has various classes that are used for performing numerous operations
+//with files such as creating and deleting file, reading from or writing to a file, closing, and more
+// the "File" class is one of em. ex
+string str = "Some text";
+File.WriteAllText("test.txt", str);
+
+		static void Main(string[] args)
+		{
+			string str = "Some text";
+			File.WriteAllText("test.txt", str);
+			
+			string txt = File.ReadAllText("test.txt");
+			Console.WriteLine(txt); 
+		}
+        //outputs Some text
+//The following methods are available in the File class: 
+//AppendAllText() - appends text to the end of the file. 
+// Create() - creates a file in the specified location. 
+// Delete() - deletes the specified file. 
+// Exists() - determines whether the specified file exists. 
+// Copy() - copies a file to a new location. 
+// Move() - moves a specified file to a new location
