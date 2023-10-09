@@ -168,3 +168,36 @@ namespace SoloLearn
         Hard
     };
 }
+//Exception Handling
+// an exception is a problem that occurs during a program execution. 
+//an exception can occur for many different reasons. some ex
+// a user enter invalid data
+// a file that needs to be opened cannot be found
+// a network connection has be lost in the middle of communications.
+// insufficient mem and other issues related to physical resources
+//ex
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int[] arr = new int[] { 4, 5, 8 };
+			Console.Write(arr[8]);
+		}
+	}
+}// bad hanling error
+//use good error handling remember try/catch from js. same thing bro
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			try {
+				int[] arr = new int[] { 4, 5, 8 };
+				Console.Write(arr[8]);
+			}
+			catch(Exception e) {
+				Console.WriteLine("An error occurred");
+			}
+		}
+	}
