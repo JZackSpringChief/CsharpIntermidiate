@@ -153,3 +153,30 @@ namespace SoloLearn
         }
     }
 }
+//Collections.
+List<int> li = new List<int>();
+//collections provide a flexable way to work with groups of objects
+Generic Collections  
+  
+Generic collections are the preferred type to use as long as every element in the collection is of the same data type. Only desired data types can be added to a generic collection and this is enforced by using strong typing which reduces the possibility of errors. 
+The .NET Framework provides a number of generic collection classes, useful for storing and manipulating data. 
+The System.Collections.Generic namespace includes the following generic collections: 
+ - List<T> 
+ - Dictionary<TKey, TValue> 
+ - SortedList<TKey, TValue> 
+ - Stack<T> 
+ - Queue<T> 
+ - Hashset<T> 
+ 
+To access a generic collection in your code, you will need to include the statement: using Systems.Collections.Generic; 
+ 
+Non-Generic Collections  
+  
+Non-generic collections can store items that are of type Object. Since an Object data type can refer to any data type, you run the risk of unexpected outcomes. Non-generic collections may also be slower to access as well as execute. 
+The System.Collections namespace includes the following non-generic collections:  
+ - ArrayList 
+ - SortedList 
+ - Stack 
+ - Queue 
+ - Hashtable 
+ - BitArray 
