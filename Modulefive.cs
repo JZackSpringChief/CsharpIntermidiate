@@ -197,7 +197,66 @@ namespace SoloLearn
 				Console.Write(arr[8]);
 			}
 			catch(Exception e) {
-				Console.WriteLine("An error occurred");
+				Console.WriteLine("An error occurred");//can also use e.Message
 			}
 		}
 	}
+int x, y;
+try {
+  x = Convert.ToInt32(Console.Read());
+  y = Convert.ToInt32(Console.Read());
+  Console.WriteLine(x / y);
+}
+catch (DivideByZeroException e) {
+  Console.WriteLine("Cannot divide by 0");
+}
+catch(Exception e) {
+  Console.WriteLine("An error occurred");
+}
+//The following exception types are some of the most commonly used: FileNotFoundException,
+// FormatException, IndexOutOfRangeException, InvalidOperationException, OutOfMemoryException.
+//optional use is "finally" = can be used after catch blocks/
+//the finally block is used to execute a given set of statements, whether an exceptoin is thrown or not.
+//ex
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int result=0;
+			int num1 = 8;
+			int num2 = 4;
+			try {
+				result = num1 / num2;
+			}
+			catch (DivideByZeroException e) {
+				Console.WriteLine("Error");
+			}
+			finally {
+				Console.WriteLine(result);
+			}
+		}
+	}
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] tours = { "England", "Spain", "Italy", "Portugal", "France" };
+            	int choice = Convert.ToInt32(Console.ReadLine());
+            
+            //your code goes here
+            try
+            {
+             	   	
+             	   	Console.WriteLine(tours[choice]);//to access choice array use array.userinput...
+            }
+            catch (Exception e)
+            {
+                	Console.WriteLine("Wrong number");
+            }
+            finally
+            {
+                	Console.WriteLine("Goodbye");
+            }
+        }
+    }
