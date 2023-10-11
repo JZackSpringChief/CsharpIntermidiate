@@ -410,7 +410,7 @@ namespace SoloLearn
 		}
 	}
 }
-namespace SoloLearn
+namespace lastQuestion
 {
     class Program
     {
